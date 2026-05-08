@@ -116,6 +116,12 @@ body {
     color: var(--text-main);
 }
 
+.logo-wrapper {
+    display: flex; 
+    align-items: center; 
+    gap: 16px;
+}
+
 .search-container {
     flex: 1;
     max-width: 448px;
@@ -230,6 +236,12 @@ body {
     font-weight: 600;
     color: var(--text-variant);
     margin-top: 16px;
+}
+
+.city-status-wrapper {
+    display: flex; 
+    flex-direction: column; 
+    gap: 8px;
 }
 
 .city-name {
