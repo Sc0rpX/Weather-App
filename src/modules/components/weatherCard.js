@@ -1,4 +1,4 @@
-export default function createWeatherCard(data) {
+function createCard(data) {
     // 1. Create the container
     const card = document.createElement('div');
     card.classList.add('glass-card');
@@ -9,7 +9,7 @@ export default function createWeatherCard(data) {
 
     const iconSpan = document.createElement('span');
     iconSpan.classList.add('material-symbols-outlined');
-    iconSpan.textContent = data.icon; // e.g., "air"
+    iconSpan.textContent = data.icon;
 
     const titleText = document.createTextNode(` ${data.title}`);
     
@@ -21,7 +21,7 @@ export default function createWeatherCard(data) {
     
     const valueP = document.createElement('p');
     valueP.classList.add('card-value');
-    valueP.textContent = data.value; // Safely set text
+    valueP.textContent = data.value;
 
     if (data.unit) {
         const unitSpan = document.createElement('span');
@@ -42,4 +42,17 @@ export default function createWeatherCard(data) {
     card.appendChild(contentDiv);
 
     return card;
+}
+
+
+export default function createCardSection(weatherMatrics) {
+    const detailsGrid = document.createElement('section');
+    detailsGrid.className = "details-grid";
+
+    for(const key in weatherMatrics) {
+        const card = createCard(weatherMatrics[key]);
+        detailsGrid.appendChild(card);
+    }
+
+    return detailsGrid;
 }

@@ -8,12 +8,12 @@ export default function createHero(data) {
 
     const temp = document.createElement('h1');
     temp.className = 'temp-display';
+    temp.textContent = data.temp;
 
     const tempIcon = document.createElement('span');
     tempIcon.className = "temp-symbol";
     tempIcon.textContent = '°';
-    
-    temp.textContent = `${data.temp}${tempIcon}`;
+    temp.appendChild(tempIcon);
 
     const cityStatusWrapper = document.createElement('div');
     cityStatusWrapper.className = 'city-status-wrapper';
