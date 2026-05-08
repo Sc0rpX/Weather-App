@@ -10,7 +10,7 @@ export default async function getWeatherData(location = "San Fransisco", dataUni
     const tempSymbol = '°';
 
     let heroMetrics = {
-        icon: data.currentConditions.icon,
+        icon: data.currentConditions.icon.replaceAll("-", "_"),
         temp: data.currentConditions.temp,
         city: data.resolvedAddress.split(',')[0],
         status: data.currentConditions.conditions,
