@@ -1,6 +1,6 @@
 {
   "name": "webpack-template",
-  "version": "1.0.0", 
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -28,5 +28,9 @@
     "webpack-cli": "^7.0.2",
     "webpack-dev-server": "^5.2.3",
     "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "css-loader": "^7.1.4",
+    "style-loader": "^4.0.0"
   }
 }
