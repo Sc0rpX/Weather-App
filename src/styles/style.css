@@ -177,20 +177,13 @@ body {
     border: none;
     cursor: pointer;
     transition: all 0.3s;
+    background-color: transparent;
+    color: var(--text-variant);
 }
 
 .toggle-btn.active {
     background-color: var(--color-secondary-fixed);
     color: var(--text-on-secondary-fixed);
-}
-
-.toggle-btn.inactive {
-    background-color: transparent;
-    color: var(--text-variant);
-}
-
-.toggle-btn.inactive:hover {
-    color: var(--text-main);
 }
 
 /* === MAIN CONTENT === */
