@@ -1,5 +1,5 @@
 {
-  "name": "webpack-template",
+  "name": "weather-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sc0rpX/webpack-template.git"
+    "url": "git+https://github.com/Sc0rpX/Weather-App.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/Sc0rpX/webpack-template/issues"
+    "url": "https://github.com/Sc0rpX/Weather-App/issues"
   },
-  "homepage": "https://github.com/Sc0rpX/webpack-template#readme",
+  "homepage": "https://github.com/Sc0rpX/Weather-App#readme",
   "devDependencies": {
     "dotenv-webpack": "^9.0.0",
     "gh-pages": "^6.3.0",
