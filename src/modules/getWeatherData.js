@@ -11,8 +11,10 @@ export default async function getWeatherData(location, dataUnit) {
     const distanceUnit = isMetric ? 'km' : 'mi';
     const tempSymbol = '°';
 
+    const iconName = data.currentConditions.icon === "rain" ? "rainy" : data.currentConditions.icon.replaceAll("-", "_");
+
     let heroMetrics = {
-        icon: data.currentConditions.icon.replaceAll("-", "_"),
+        icon: iconName,
         temp: data.currentConditions.temp,
         city: data.resolvedAddress.split(',')[0],
         status: data.currentConditions.conditions,
