@@ -6,11 +6,13 @@ import getBgImage from "./getBackgroundImage.js";
 export default async function loadContent(location, dataUnit) {
     const mainLayout = document.querySelector('.main-layout');
     const bgImg = document.querySelector('#bg-img');
+
+    // Clear main layout
     mainLayout.textContent = "";
 
     const { heroMetrics, weatherMatrics } = await getWeatherData(location, dataUnit);
-    bgImg.src = await getBgImage(heroMetrics.status);
-    
+    bgImg.src = await getBgImage(heroMetrics.icon);
+
     const heroSection = createHero(heroMetrics);
     const detailsSection = createCardSection(weatherMatrics);
     
