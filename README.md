@@ -2,7 +2,7 @@
 
 A beautiful, real-time weather application with a modern glassmorphism UI. The app focuses on providing accurate current weather conditions for any city around the world, paired with a dynamic background that changes to match the weather outside.
 
-**🔗 [View Live Preview Here](#)**
+**🔗 [View Live Preview Here](https://sc0rpx.github.io/Weather-App/)**
 
 ## ✨ Features
 * **Real-Time Weather Data:** Get accurate, up-to-the-minute current conditions and temperatures. 
