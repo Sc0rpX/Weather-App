@@ -4,7 +4,6 @@ export default async function getWeatherData(location, dataUnit) {
     const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}/today?unitGroup=${dataUnit}&elements=conditions%2Cdescription%2Cfeelslike%2Chumidity%2Cicon%2Cname%2Coffset%2Cpressure%2Csevererisk%2CsunriseEpoch%2CsunsetEpoch%2Ctemp%2Cuvindex%2Cvisibility%2Cwindspeed&include=current&key=${process.env.WEATHER_API_KEY}&contentType=json`);
 
     const data = await response.json();
-    console.log(data);
 
     const isMetric = dataUnit === "metric";
     const speedUnit = isMetric ? 'km/h' : 'mph';
